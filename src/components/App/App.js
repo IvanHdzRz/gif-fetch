@@ -1,9 +1,10 @@
 import React,{useState} from 'react'
-import PropTypes from 'prop-types'
+
 import InputAddCategory from '../InputAddCategory/InputAddCategory'
+import ImageDisplayer from '../ImageDisplayer/ImageDisplayer'
 const App=()=> {
-    const apiKey='XnQiIsihPLVZ303SDHFUyYUTZIrJa5Ln';
-    const [categories,setCategories]=useState(['cosa1','cosa2']);
+    
+    const [categories,setCategories]=useState(['garden']);
     
     const handdleAddCategorie=(newCategorie)=>{
         setCategories([newCategorie,...categories]);
@@ -14,24 +15,15 @@ const App=()=> {
             
             <InputAddCategory onAddCategory={handdleAddCategorie}/>    
             <hr />
-            <div className='categories'>
-                <h2>categories</h2>
-                <ul>
-                    {categories.map(cat=>{
-                        return (
-                            <li key={cat}>
-                                {cat}
-                            </li>)
-                    })}
-                </ul>
-            </div>
+            
+            {categories.map(categorie=>
+                <ImageDisplayer keyword={categorie} key={categorie}/>
+            )}
         </div>
     )
 }
 
-App.propTypes = {
 
-}
 
 export default App
 
