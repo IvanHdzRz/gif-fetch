@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import PropTypes from 'prop-types'
+import Styles from './InputAddCategorie.module.css'
 
 function InputAddCategory({onAddCategory}) {
     
@@ -21,9 +22,11 @@ function InputAddCategory({onAddCategory}) {
             <input 
                 type='text' 
                 id='#newCat' 
-                placeholder='type a name of new category'
+                placeholder='search images'
                 value={inputValue}
                 onChange={handleChange}
+                autoComplete="off"
+                className={Styles.searchBar}
             />
         </form>
     )

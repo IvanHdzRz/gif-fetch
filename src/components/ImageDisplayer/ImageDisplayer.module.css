@@ -1,0 +1,15 @@
+.ImageDisplayer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    max-width: 90vw;
+    margin: 1rem auto;
+    border-radius: 10px;
+}
+
+.imageItems{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
