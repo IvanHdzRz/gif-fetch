@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pruebas en  componenteimageItem debe renderizar componente 1`] = `
+<ImageItem
+  id="12345"
+  title="example"
+  url="http://hola.com"
+/>
+`;
