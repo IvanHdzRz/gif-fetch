@@ -9,7 +9,7 @@ function ImageDisplayer({keyword}) {
     const {isLoading,images}=useFetchImages(keyword)    
    
     return (
-        <div className={Styles.ImageDisplayer}>
+        <div className={Styles.ImageDisplayer+' animate__animated animate__slideInDown'}>
             <h2 className={Styles.seccionTitle}>
                 {keyword}
             </h2>

@@ -6,6 +6,12 @@
     max-width: 90vw;
     margin: 1rem auto;
     border-radius: 10px;
+    transition: height 1s;
+    -webkit-transition: height 1s;
+    -moz-transition: height 1s;
+    -ms-transition: height 1s;
+    -o-transition: height 1s;
+    
 }
 
 .imageItems{
